@@ -27,6 +27,15 @@
     <ClCompile Include="ds-tree-traversal-pre-order.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ds-tree-traversal-post-order.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ds-tree-traversal-level-order.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ds-tree-problems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ds-tree.h">

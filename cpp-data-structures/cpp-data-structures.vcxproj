@@ -65,7 +65,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="data-structures-tree-traversal.cpp" />
+    <ClCompile Include="ds-tree-problems.cpp" />
     <ClCompile Include="ds-tree-traversal-in-order.cpp" />
+    <ClCompile Include="ds-tree-traversal-level-order.cpp" />
+    <ClCompile Include="ds-tree-traversal-post-order.cpp" />
     <ClCompile Include="ds-tree-traversal-pre-order.cpp" />
     <ClCompile Include="ds-tree.cpp" />
   </ItemGroup>

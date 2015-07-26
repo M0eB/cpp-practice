@@ -20,8 +20,8 @@ void pre_order_non_recursive( Node* root )
 
 }
 
-int main()
-//int pre_order_main()
+//int main()
+int pre_order_main()
 {
    //        4
    //     2     6
