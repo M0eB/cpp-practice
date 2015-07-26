@@ -203,7 +203,7 @@ void Tree::Mirror_InPlace( Node* node )
 
 
 
-int main( void )
+int not_main( void )
 {
 	Tree* tree = new Tree();
 	tree->AddNode( 30 );

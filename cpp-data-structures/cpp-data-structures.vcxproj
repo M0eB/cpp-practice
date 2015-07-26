@@ -65,6 +65,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="data-structures-tree-traversal.cpp" />
+    <ClCompile Include="ds-tree-traversal-in-order.cpp" />
+    <ClCompile Include="ds-tree-traversal-pre-order.cpp" />
+    <ClCompile Include="ds-tree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ds-tree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
