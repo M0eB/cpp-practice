@@ -41,3 +41,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+# Visual Studio Debug Files
+cpp-problems/Debug/
+cpp-algorithms/Debug/
+cpp-data-structures/Debug/
