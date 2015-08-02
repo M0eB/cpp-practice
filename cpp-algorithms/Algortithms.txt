@@ -1,0 +1,21 @@
+
+
+Sorting : 
+
+	- Bubble Sort
+	- Merge Sort
+	- Quick Sort
+	- Selection Sort
+	- Insertion Sort
+	- Shell Sort
+	- Heap Sort
+	- Tree Sort
+	- Counting Sort
+	- Bucket Sort
+	- Radix Sort
+	- Dutch Flag Problem
+
+Searching :
+
+	- Binary Search
+

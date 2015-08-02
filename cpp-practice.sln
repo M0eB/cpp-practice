@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-data-structures", "cpp-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-problems", "cpp-problems\cpp-problems.vcxproj", "{009D9573-CD0E-4B78-A25B-88394D708B01}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-algorithms", "cpp-algorithms\cpp-algorithms.vcxproj", "{3EEFCD1F-2F63-4807-8124-1CEC40A9BB36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{009D9573-CD0E-4B78-A25B-88394D708B01}.Debug|Win32.Build.0 = Debug|Win32
 		{009D9573-CD0E-4B78-A25B-88394D708B01}.Release|Win32.ActiveCfg = Release|Win32
 		{009D9573-CD0E-4B78-A25B-88394D708B01}.Release|Win32.Build.0 = Release|Win32
+		{3EEFCD1F-2F63-4807-8124-1CEC40A9BB36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3EEFCD1F-2F63-4807-8124-1CEC40A9BB36}.Debug|Win32.Build.0 = Debug|Win32
+		{3EEFCD1F-2F63-4807-8124-1CEC40A9BB36}.Release|Win32.ActiveCfg = Release|Win32
+		{3EEFCD1F-2F63-4807-8124-1CEC40A9BB36}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
