@@ -79,7 +79,7 @@ void partition( int arr[], int length, int i )
 }
 
 
-int main()
+int NOT_main()
 {
     vector<int> input = { 1, 5, 6, 4, 4, 2 };
 
