@@ -66,12 +66,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="epi_06-01_arrays_dutch-flag-partition.cpp" />
-    <ClCompile Include="epi_07-01_lists_merge-two-sorted-lists.cpp" />
-    <ClCompile Include="epi_07-02_lists_checking-for-cyclicity.cpp" />
-    <ClCompile Include="epi_08-01_stacks-queues_stack-with-max-operation.cpp" />
-    <ClCompile Include="epi_08-03_stacks-queues_printint-keys-in-bst.cpp" />
-    <ClCompile Include="epi_14-10_sorting_counting-sort.cpp" />
+    <ClCompile Include="epi_06-01__arrays__dutch-flag-partition.cpp" />
+    <ClCompile Include="epi_07-01__strings__interconvert-strings-and-integers.cpp" />
+    <ClCompile Include="epi_08-01__lists__merge-two-sorted-lists.cpp" />
+    <ClCompile Include="epi_08-05__lists__checking-for-cyclicity.cpp" />
+    <ClCompile Include="epi_08-01__stacks-queues__stack-with-max-operation.cpp" />
+    <ClCompile Include="epi_08-03__stacks-queues__printing-keys-in-bst.cpp" />
+    <ClCompile Include="epi_14-10__sorting__counting-sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h" />
