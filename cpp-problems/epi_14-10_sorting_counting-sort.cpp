@@ -84,8 +84,8 @@ void epi_group_by_age( vector<Person>* person_array )
 
 }
 
-
-int main()
+//int main()
+int counting_sort_main()
 {
     vector<Person> people = { Person( { 20, "foo" } ), 
                               Person( { 10, "bar" } ), 

@@ -73,6 +73,7 @@
     <ClCompile Include="ds-tree.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ds-list.h" />
     <ClInclude Include="ds-tree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

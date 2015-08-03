@@ -38,7 +38,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\mismail\github-repo\cpp-practice\cpp-practice\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -65,7 +67,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="epi_06-01_arrays_dutch-flag-partition.cpp" />
+    <ClCompile Include="epi_07-01_lists_merge-two-sorted-lists.cpp" />
+    <ClCompile Include="epi_07-02_lists_checking-for-cyclicity.cpp" />
+    <ClCompile Include="epi_08-01_stacks-queues_stack-with-max-operation.cpp" />
+    <ClCompile Include="epi_08-03_stacks-queues_printint-keys-in-bst.cpp" />
     <ClCompile Include="epi_14-10_sorting_counting-sort.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="linked_list_prototype.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
