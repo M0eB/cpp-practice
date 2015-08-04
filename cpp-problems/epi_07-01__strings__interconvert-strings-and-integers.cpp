@@ -110,8 +110,8 @@ string int_to_string( int value )
 }
 
 
-int main()
-//int convert_ints_and_strings_main()
+//int main()
+int convert_ints_and_strings_main()
 {
 
     assert( StringToInt( "123" ) == 123 );

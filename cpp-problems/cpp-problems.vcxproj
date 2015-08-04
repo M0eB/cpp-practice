@@ -70,8 +70,8 @@
     <ClCompile Include="epi_07-01__strings__interconvert-strings-and-integers.cpp" />
     <ClCompile Include="epi_08-01__lists__merge-two-sorted-lists.cpp" />
     <ClCompile Include="epi_08-05__lists__checking-for-cyclicity.cpp" />
-    <ClCompile Include="epi_08-01__stacks-queues__stack-with-max-operation.cpp" />
-    <ClCompile Include="epi_08-03__stacks-queues__printing-keys-in-bst.cpp" />
+    <ClCompile Include="epi_09-01__stacks-queues__stack-with-max-operation.cpp" />
+    <ClCompile Include="epi_09-03__stacks-queues__printing-keys-in-bst.cpp" />
     <ClCompile Include="epi_14-10__sorting__counting-sort.cpp" />
   </ItemGroup>
   <ItemGroup>

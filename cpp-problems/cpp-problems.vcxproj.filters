@@ -27,13 +27,13 @@
     <ClCompile Include="epi_08-05__lists__checking-for-cyclicity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="epi_08-01__stacks-queues__stack-with-max-operation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="epi_08-03__stacks-queues__printing-keys-in-bst.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="epi_14-10__sorting__counting-sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="epi_09-01__stacks-queues__stack-with-max-operation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="epi_09-03__stacks-queues__printing-keys-in-bst.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
