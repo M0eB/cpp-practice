@@ -1,12 +1,15 @@
-// Given an array of integers. Write a function “countDuplicates” which will
-// count the total number of distinct integers that occur more than once in
-// the array. Write a main() function and demonstrate the correct behavior
-// for the following sample arrays.
-//
-// {5,2,2,4} -->  1  (2 occurs more than once)
-// {8,33,7,8,7,7} -->  2  (7, 8 occur more than once)
-// {1,2,3} --> 0 (no duplicates)
+ 
+/* Problem :
 
+    Given an array of integers. Write a function “countDuplicates” which will
+    count the total number of distinct integers that occur more than once in\
+    the array. Write a main() function and demonstrate the correct behavior
+    for the following sample arrays.
+
+    {5,2,2,4}      --> 1  (2 occurs more than once)
+    {8,33,7,8,7,7} --> 2  (7, 8 occur more than once)
+    {1,2,3}        --> 0  (no duplicates)
+*/
 
 #include <iostream>
 #include <map>

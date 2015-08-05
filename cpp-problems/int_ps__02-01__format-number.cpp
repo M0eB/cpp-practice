@@ -1,6 +1,11 @@
-// 1234 -> 1,234
-// 1234567 -> 1,234,567
-// 100 -> 100
+
+/* Problem :
+
+    Given a number, format it as follows : 
+        1234 -> 1,234
+        1234567 -> 1,234,567
+        100 -> 100
+*/
 
 #include <iostream>
 #include <string>
