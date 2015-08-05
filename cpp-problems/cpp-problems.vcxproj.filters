@@ -36,6 +36,15 @@
     <ClCompile Include="epi_09-03__stacks-queues__printing-keys-in-bst.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="int_ps__02-01__format-number.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="int_ps__02-02__ip_to_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="int_ps__02-03__count_duplicates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h">

@@ -4,8 +4,8 @@ using namespace std;
 #include <cpp-data-structures\ds-list.h>
 
 #include <cassert>
-
-
+#include <string>
+//#include <cstdio>
 
 /* Solution */
 
@@ -95,6 +95,12 @@ private:
 int main( )
 //int stack_with_max_main()
 {
+    std::string input;
+    getline( cin, input );
+
+
+
+
     Stack test;
     test.push( 3 );
     test.push( 1 );
