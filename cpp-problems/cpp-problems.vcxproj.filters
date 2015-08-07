@@ -45,6 +45,21 @@
     <ClCompile Include="int_ps__02-03__count_duplicates.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="int_ps__01-01__reverse-sentence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="int_ip__01_02__bst-node-insert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="int_ip__01-03__anagrams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="int_ps__01-02__make_change.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="int_ip__01-05__round_float.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h">
