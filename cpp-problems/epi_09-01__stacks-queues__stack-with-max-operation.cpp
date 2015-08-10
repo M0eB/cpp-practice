@@ -92,8 +92,8 @@ private:
 
 
 
-int main( )
-//int stack_with_max_main()
+//int main( )
+int stack_with_max_main()
 {
     std::string input;
     getline( cin, input );
