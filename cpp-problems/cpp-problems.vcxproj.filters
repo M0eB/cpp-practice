@@ -60,6 +60,9 @@
     <ClCompile Include="int_ip__01-05__round_float.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="epi_10-01__trees__test_balanced_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h">

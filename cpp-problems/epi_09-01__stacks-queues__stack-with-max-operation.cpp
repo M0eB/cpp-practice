@@ -98,9 +98,6 @@ int stack_with_max_main()
     std::string input;
     getline( cin, input );
 
-
-
-
     Stack test;
     test.push( 3 );
     test.push( 1 );

@@ -1,3 +1,12 @@
+/********************************************************************
+Problem :
+
+    Given two strings, determine if they are anagrams of each other.
+    eg.- "hello", "oehll" --> true
+    eg.- "blue", "blues"  --> false
+
+*********************************************************************/
+
 #include<iostream>
 using namespace std;
 

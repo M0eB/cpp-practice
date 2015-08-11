@@ -1,7 +1,8 @@
 /* Problem :
-Parse a binary IP value and format as a dotted-decimal string.
-e.g 2130706433 --> "127.0.0.1"
-e.g 3232235521 --> "192.168.0.1"
+
+    Parse a binary IP value and format as a dotted-decimal string.
+    e.g 2130706433 --> "127.0.0.1"
+    e.g 3232235521 --> "192.168.0.1"
 */
 
 #include <iostream>
