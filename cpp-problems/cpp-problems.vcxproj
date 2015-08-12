@@ -82,6 +82,8 @@
     <ClCompile Include="int_ps__02-01__format-number.cpp" />
     <ClCompile Include="int_ps__02-02__ip_to_string.cpp" />
     <ClCompile Include="int_ps__02-03__count_duplicates.cpp" />
+    <ClCompile Include="int_ps__02-04__inheritance_output _order.cpp" />
+    <ClCompile Include="int_ps__02-05__url_history.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h" />

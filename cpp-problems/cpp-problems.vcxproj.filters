@@ -63,6 +63,12 @@
     <ClCompile Include="epi_10-01__trees__test_balanced_tree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="int_ps__02-04__inheritance_output _order.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="int_ps__02-05__url_history.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h">
