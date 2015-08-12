@@ -8,14 +8,23 @@ using namespace std;
 
 
 
-int get_max_height( Node* root )
+int get_tree_height( Node* root )
 {
-    return 0;
+    int height = 0;
+
+    if ( root != NULL )
+    {
+        height += get_tree_height( root->left() );
+        height += get_tree_height( root->right() );
+        height++;
+    }
+
+    return height;
 }
 
 bool test_balanced_tree( Node* root )
 {
-    int height_diff = get_max_height( root->left() ) - get_max_height( root->right() );
+    int height_diff = get_tree_height( root->left( ) ) - get_tree_height( root->right( ) );
 
     if ( abs( height_diff ) > 1 )
         return false;
@@ -24,8 +33,8 @@ bool test_balanced_tree( Node* root )
 }
 
 
-int main()
-//int test_balanced_tree_main()
+//int main()
+int test_balanced_tree_main()
 {
     BTree* tree = new BTree();
     tree->AddNode( 4 );
