@@ -203,7 +203,8 @@ void Tree::Mirror_InPlace( Node* node )
 
 
 
-int not_main( void )
+//int main( void )
+int tree_traversal_main()
 {
 	Tree* tree = new Tree();
 	tree->AddNode( 30 );

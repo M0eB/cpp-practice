@@ -52,7 +52,8 @@ void urlhistory::displayURLS( )
 {
 }
 
-int main()
+//int main()
+int url_history_main()
 {
 
 

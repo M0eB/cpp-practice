@@ -70,9 +70,9 @@ vector<int> counting_sort( vector<int> input )
 }
 
 
-int NOT_main()
+//int main()
+int counting_sort_main()
 {
-
     vector<int> input = { 7, 1, 5, 2, 2 };
 
     vector<int> result = counting_sort( input );
