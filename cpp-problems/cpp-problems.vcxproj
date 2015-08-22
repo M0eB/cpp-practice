@@ -73,6 +73,7 @@
     <ClCompile Include="epi_09-01__stacks-queues__stack-with-max-operation.cpp" />
     <ClCompile Include="epi_09-03__stacks-queues__printing-keys-in-bst.cpp" />
     <ClCompile Include="epi_10-01__trees__test_balanced_tree.cpp" />
+    <ClCompile Include="epi_11-01__heaps__merge_sorted_files.cpp" />
     <ClCompile Include="epi_14-10__sorting__counting-sort.cpp" />
     <ClCompile Include="int_ip__01-03__anagrams.cpp" />
     <ClCompile Include="int_ip__01-05__round_float.cpp" />
