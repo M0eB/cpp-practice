@@ -2,18 +2,18 @@
 
 STL Data Structures ( Containers ) 
 
-           NAME    IMPLEMENTATION    LOOKUP    INSERTION
+           NAME    IMPLEMENTATION      LOOKUP       INSERTION
 ____________________________________________________________________
 
           array
-         vector            
-           list              
-   forward_list
-          stack             
-          queue             
- priority_queue
-          deque             
-            map            
+         vector    dynamic array
+           list    doubly-linked      constant       constant
+   forward_list                
+          stack    deque
+          queue    deque
+ priority_queue    deque
+          deque      
+            map     
             set             
        multiset
   unordered_map               
@@ -24,24 +24,64 @@ ____________________________________________________________________
 #include <iostream>
 using namespace std;
 
-
-class bigobject
-{
-public:
-    bigobject( string string1 ) : m_string( string1 ){}
-    bigobject( int num, string string ): m_num( num ), m_string( string ){}
-    ~bigobject(){}
-private:
-    bigobject();   //disable default constructor
-    int    m_num;
-    string m_string;
-};
+#include "ds-bigobject.h";
 
 
 #include <vector>
 void stl_vector()
 {
+    /*
+        - use contiguous storage locations for their elements
+        - size can change dynamically 
+        - insertion at the end is amortized constant time (push_back)
+        - efficient in accessing elements (random access)
+        - efficient in adding/removing at end
+        - less efficient than (deques, lists, forward_lists) if 
+          inserting/removing at other positions (new copy)
+    */
 
+    vector<int> foo;
+    vector<int> baz;
+
+    // INSERT =================================================================
+
+    foo.push_back( 1 );            //  1
+    foo.push_back( 2 );            //  1  2
+    foo.push_back( 3 );            //  1  2  3
+    
+    auto it2 = foo.begin();        // [1] 2  3
+
+    foo.insert( it2, 4 );          //  4  1  2  3       - iterator lost
+    
+    // ACCESS =================================================================
+
+    int val;
+
+    val = foo[ 2 ];                //  4  1 [2] 3
+    val = foo.at( 2 );             //  4  1 [2] 3
+    val = foo.front();             // [4] 1  2  3
+    val = foo.back();              //  4  1  2 [3]
+
+    int* p = foo.data();           // [4] 1  2  3 - pointer to array
+
+    // REMOVE =================================================================
+
+    foo.pop_back();                //  4  1  2
+    foo.pop_back();                //  4  1
+
+    foo.erase( foo.begin() + 1 );  // 4         - remove range (first, last )
+    foo.clear();                   //           - remove all
+
+    // COPY ===================================================================
+
+    foo.assign( 5, 99 );                   // 99  99  99  99  99
+    auto it1 = foo.begin();
+    baz.assign( it1 + 2, foo.end() - 1 );  // 99  99  99    - copy range
+
+    vector<bigobject> bar;
+
+    bar.emplace( bar.begin(), "obj1" );
+    bar.emplace_back( "obj2" );
 
 }
 
@@ -50,32 +90,37 @@ void stl_list()
 {
     list<int> foo;
 
-    foo.push_back( 1 );
-    foo.push_back( 2 );
-    foo.push_back( 3 );
-    foo.push_front( 4 );
-    foo.push_front( 5 );
-    foo.push_front( 6 );
+    foo.push_back( 1 );     // 1
+    foo.push_back( 2 );     // 1 2
+    foo.push_back( 3 );     // 1 2 3
+    foo.push_front( 4 );    // 4 1 2 3
+    foo.push_front( 5 );    // 5 4 1 2 3
+    foo.push_front( 6 );    // 6 5 4 1 2 3
 
-    foo.pop_back();
-    foo.pop_back();
-    foo.pop_front();
+    foo.pop_back();         // 6 5 4 1 2
+    foo.pop_back();         // 6 5 4 1
+    foo.pop_front();        // 5 4 1
 
-    auto it = foo.begin();
-    advance( it, 1 );
+    auto it = foo.begin();  // 5 4 1
+    advance( it, 1 );       //   ^
 
-    foo.erase( it );
-    foo.erase( it );
+    foo.erase( it );        // 5 1  (it lost)
 
-    foo.size();
+    foo.size();             // =2
     foo.empty();
+
+
+
 
 }
 
+
+#include <forward_list>
 void forward_list()
 {
 
 }
+
 
 #include <stack>
 void stl_stack()
@@ -130,6 +175,7 @@ void stl_queue()
 
 }
 
+
 void stl_priority_queue()
 {
 
@@ -151,6 +197,7 @@ void stl_map()
 
 }
 
+
 #include <unordered_map>
 void stl_unordered_map()
 {
@@ -158,17 +205,20 @@ void stl_unordered_map()
 
 }
 
+
 #include <set>
 void stl_set()
 {
 
 }
 
+
 #include <unordered_set>
 void stl_unordered_set()
 {
 
 }
+
 
 
 int main()

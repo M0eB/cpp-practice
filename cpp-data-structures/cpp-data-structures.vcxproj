@@ -74,6 +74,7 @@
     <ClCompile Include="stl-data-structures.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ds-bigobject.h" />
     <ClInclude Include="ds-list.h" />
     <ClInclude Include="ds-tree.h" />
   </ItemGroup>

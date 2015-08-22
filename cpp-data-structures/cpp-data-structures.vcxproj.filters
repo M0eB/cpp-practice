@@ -47,5 +47,8 @@
     <ClInclude Include="ds-list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ds-bigobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
