@@ -72,6 +72,7 @@
     <ClCompile Include="ds-tree-traversal-pre-order.cpp" />
     <ClCompile Include="ds-tree.cpp" />
     <ClCompile Include="stl-data-structures.cpp" />
+    <ClCompile Include="stl-priority-queue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ds-bigobject.h" />

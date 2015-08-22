@@ -39,6 +39,9 @@
     <ClCompile Include="stl-data-structures.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="stl-priority-queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ds-tree.h">

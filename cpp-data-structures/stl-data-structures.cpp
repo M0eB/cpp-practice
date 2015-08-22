@@ -24,10 +24,22 @@ ____________________________________________________________________
 #include <iostream>
 using namespace std;
 
+#include <vector>
+#include <list>
+#include <forward_list>
+#include <stack>
+#include <queue>
+#include <deque>
+#include <map>
+#include <unordered_map>
+#include <set>
+#include <unordered_set>
+
 #include "ds-bigobject.h";
 
 
-#include <vector>
+
+
 void stl_vector()
 {
     /*
@@ -49,9 +61,9 @@ void stl_vector()
     foo.push_back( 2 );            //  1  2
     foo.push_back( 3 );            //  1  2  3
     
-    auto it2 = foo.begin();        // [1] 2  3
+    auto it1 = foo.begin();        // [1] 2  3
 
-    foo.insert( it2, 4 );          //  4  1  2  3       - iterator lost
+    foo.insert( it1, 4 );          //  4  1  2  3       - iterator lost
     
     // ACCESS =================================================================
 
@@ -75,8 +87,8 @@ void stl_vector()
     // COPY ===================================================================
 
     foo.assign( 5, 99 );                   // 99  99  99  99  99
-    auto it1 = foo.begin();
-    baz.assign( it1 + 2, foo.end() - 1 );  // 99  99  99    - copy range
+    auto it2 = foo.begin();
+    baz.assign( it2 + 2, foo.end() - 1 );  // 99  99  99    - copy range
 
     vector<bigobject> bar;
 
@@ -85,7 +97,6 @@ void stl_vector()
 
 }
 
-#include <list>
 void stl_list()
 {
     list<int> foo;
@@ -108,21 +119,13 @@ void stl_list()
 
     foo.size();             // =2
     foo.empty();
-
-
-
-
 }
 
-
-#include <forward_list>
 void forward_list()
 {
 
 }
 
-
-#include <stack>
 void stl_stack()
 {
 /*
@@ -168,60 +171,99 @@ void stl_stack()
 
 }
 
-
-#include <queue>
 void stl_queue()
 {
+    int  n;
+    bool b;
 
+    queue<int> foo;
+
+    foo.push( 1 );      //  1
+    foo.push( 2 );      //  1  2
+    foo.push( 3 );      //  1  2  3
+    
+    n = foo.front();    // [1] 2  3
+    n = foo.back();     //  1  2 [3]
+
+    foo.pop();          //  2  3
+    foo.pop();          //  3
+
+    n = foo.size();     // =1
+    b = foo.empty();    // false
+
+    queue<int> bar;
+    bar.push( 1 );      
+    bar.push( 2 );
+    bar.swap( foo );    // foo= 1  2 , bar = 3
+    
+    queue<bigobject> baz;
+    baz.push( bigobject( 1, "yo" ) );
+    baz.emplace( 1, "hey" );
 }
-
 
 void stl_priority_queue()
 {
+    int  n;
+    bool b;
 
+    priority_queue<int> foo;  //same as stack ? 
+
+    foo.push( 2 );     //  2
+    foo.push( 1 );     //  2  1
+    foo.push( 3 );     //  3  2  1
+    foo.push( 2 );     //  3  2  2  1
+    foo.push( 4 );     //  4  3  2  2  1
+
+    n = foo.top();     // 
+    n = foo.top();
+
+    foo.pop();
+    foo.pop();
+    
+    n = foo.size();
+    b = foo.empty();
+
+    priority_queue<int> bar;
+    bar.push( 1 );
+    bar.swap( foo );
+
+    priority_queue <bigobject> baz;
+    //baz.emplace( 1, "yo" );        //error - no way to compare objects and arrange
+
+    //refer to "stl-priority-queue" for better example with custom data structure
 
 }
 
-
-#include <deque>
 void stl_deque()
 {
 
 
 }
 
-
-#include <map>
 void stl_map()
 {
 
 }
 
-
-#include <unordered_map>
 void stl_unordered_map()
 {
 
 
 }
 
-
-#include <set>
 void stl_set()
 {
 
 }
 
-
-#include <unordered_set>
 void stl_unordered_set()
 {
 
 }
 
 
-
-int main()
+//int main()
+int stl_data_structures()
 {
     stl_vector();
     stl_list();
