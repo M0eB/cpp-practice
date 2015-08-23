@@ -29,114 +29,114 @@ using namespace std;
 
 
 
-
-
-class CompareStock
-{
-public:
-    bool operator()( string stock1, string stock2 )
-    {
-        if( stock1 < stock2 )
-            return true;
-        else
-            return false;
-    }
-};
-
-
-class MergeFiles
-{
-public:
-    void merge_files( vector<string> fileList )
-    {
-        files = fileList;
-        lines = get_next_set();
-
-        while( !lines.empty() )
-        {
-            pq.push( lines.front() );
-            lines.pop();
-
-            if( lines.empty() )
-            { 
-                //write items in pq to file
-                pq.top();  //write to file;
-                pq.pop();
-                lines = get_next_set();
-            }
-        }
-    }
-
-private:
-    int lineIndex;
-    vector<string> files;
-    queue<string> lines;
-    priority_queue<string, vector<string>, CompareStock> pq;
-
-    string get_file_line( string file, int index )
-    {
-        //open file
-        //read line at index
-        //if no file has less lines than index, return empty
-        //else close file, return string at index
-    
-    }
-
-    queue<string> get_next_set()
-    {
-        queue<string> set;
-
-        for( auto it = files.begin(); it != files.end(); it++ )
-        {
-            string line = get_file_line( *it, lineIndex );
-
-            if( line.empty() )
-                files.erase( it );
-            else
-                set.push( line );
-        }
-
-        lineIndex++;
-
-        return set;
-    }
-};
-
-string getFileLine( string file )
-{
-
-    return "";
-}
-
-
-
-
-string sort_files()
-{
-
-    priority_queue<string, vector<string>, CompareStock> pq;
-
-    vector<string> files;
-    int lineIndex;
-
-    for( auto it = files.begin(); it != files.end(); it++ )
-    {
-        pq.push( getFileLine( *it ) );
-    }
-
-
-}
-
-
-
-
-
-int main()
-{
-
-
-
-
-    return 0;
-}
-
+//
+//
+//class CompareStock
+//{
+//public:
+//    bool operator()( string stock1, string stock2 )
+//    {
+//        if( stock1 < stock2 )
+//            return true;
+//        else
+//            return false;
+//    }
+//};
+//
+//
+//class MergeFiles
+//{
+//public:
+//    void merge_files( vector<string> fileList )
+//    {
+//        files = fileList;
+//        lines = get_next_set();
+//
+//        while( !lines.empty() )
+//        {
+//            pq.push( lines.front() );
+//            lines.pop();
+//
+//            if( lines.empty() )
+//            { 
+//                //write items in pq to file
+//                pq.top();  //write to file;
+//                pq.pop();
+//                lines = get_next_set();
+//            }
+//        }
+//    }
+//
+//private:
+//    int lineIndex;
+//    vector<string> files;
+//    queue<string> lines;
+//    priority_queue<string, vector<string>, CompareStock> pq;
+//
+//    string get_file_line( string file, int index )
+//    {
+//        //open file
+//        //read line at index
+//        //if no file has less lines than index, return empty
+//        //else close file, return string at index
+//    
+//    }
+//
+//    queue<string> get_next_set()
+//    {
+//        queue<string> set;
+//
+//        for( auto it = files.begin(); it != files.end(); it++ )
+//        {
+//            string line = get_file_line( *it, lineIndex );
+//
+//            if( line.empty() )
+//                files.erase( it );
+//            else
+//                set.push( line );
+//        }
+//
+//        lineIndex++;
+//
+//        return set;
+//    }
+//};
+//
+//string getFileLine( string file )
+//{
+//
+//    return "";
+//}
+//
+//
+//
+//
+//string sort_files()
+//{
+//
+//    priority_queue<string, vector<string>, CompareStock> pq;
+//
+//    vector<string> files;
+//    int lineIndex;
+//
+//    for( auto it = files.begin(); it != files.end(); it++ )
+//    {
+//        pq.push( getFileLine( *it ) );
+//    }
+//
+//
+//}
+//
+//
+//
+//
+//
+//int main()
+//{
+//
+//
+//
+//
+//    return 0;
+//}
+//

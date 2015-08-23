@@ -72,6 +72,15 @@
     <ClCompile Include="epi_11-01__heaps__merge_sorted_files.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="leet_001__max-points-on-a-line.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leet_005__product-of-array-except-self.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leet_004__excel-sheet-column-number.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h">

@@ -85,6 +85,9 @@
     <ClCompile Include="int_ps__02-03__count_duplicates.cpp" />
     <ClCompile Include="int_ps__02-04__inheritance_output _order.cpp" />
     <ClCompile Include="int_ps__02-05__url_history.cpp" />
+    <ClCompile Include="leet_001__max-points-on-a-line.cpp" />
+    <ClCompile Include="leet_004__excel-sheet-column-number.cpp" />
+    <ClCompile Include="leet_005__product-of-array-except-self.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h" />
