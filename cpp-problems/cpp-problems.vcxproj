@@ -88,6 +88,7 @@
     <ClCompile Include="leet_001__max-points-on-a-line.cpp" />
     <ClCompile Include="leet_004__excel-sheet-column-number.cpp" />
     <ClCompile Include="leet_005__product-of-array-except-self.cpp" />
+    <ClCompile Include="leet_006__number-of-digit-one.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h" />

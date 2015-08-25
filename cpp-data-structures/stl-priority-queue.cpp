@@ -69,11 +69,10 @@ void pq_custom_example()
         cout << setw( 3 ) << t2.h << " " << setw( 3 ) << t2.m << " " << setw( 3 ) << t2.s << endl;
         pq.pop();
     }
-
 }
 
-int main()
-//int stl_priority_queue()
+//int main()
+int stl_priority_queue()
 {
     cout << "Simple Example :" << endl;
     pq_simple_example();

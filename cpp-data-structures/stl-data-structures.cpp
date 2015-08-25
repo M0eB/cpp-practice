@@ -253,8 +253,66 @@ void stl_unordered_map()
 
 void stl_set()
 {
+    // Implemented as a Binary Search Tree
+
+    int  n;
+    bool b;
+
+    set<string> foo;
+    foo.insert( "hey" );
+    foo.insert( "hi" );
+    foo.insert( "hello" );
+    foo.insert( "hello" );
+
+    n = foo.count( "hello" );  // 1 (return 1 or 0 only)
+    n = foo.size( );            // =3
+    b = foo.empty( );          // false
+
+    foo.erase( "hi" );
+    foo.count( "hi" );  // 0
+
+    set<string>::iterator it1;
+    it1 = foo.find( "hi" );      // nullptr
+    it1 = foo.find( "hello" );   // pointer to hello node
+    
+    set<bigobject, compare_bigobject> bar;
+    bar.insert( bigobject( 1, "yo" ) );
+    bar.emplace( 1, "object1" );
+    bar.emplace( 2, "object2" );
+    bar.emplace( 3, "object3" );
+
+    bigobject obj = bigobject( 1, "object2" );
+    auto it2 = bar.find( obj );
+
+    n = bar.count( obj );
 
 }
+
+void stl_multiset()
+{
+    // Implemented as a Binary Search Tree
+
+    int  n;
+    bool b;
+
+    multiset<string> foo;
+    foo.insert( "hey" );
+    foo.insert( "hi" );
+    foo.insert( "hello" );
+    foo.insert( "hello" );
+
+    n = foo.count( "hello" );  // 2
+    n = foo.size( );           // =4
+    b = foo.empty( );          // false
+
+    foo.erase( "hi" );
+    foo.count( "hi" );  // 0
+
+    multiset<string>::iterator it;
+    it = foo.find( "hi" );      // nullptr
+    it = foo.find( "hello" );   // pointer to hello node
+}
+
 
 void stl_unordered_set()
 {
@@ -262,9 +320,12 @@ void stl_unordered_set()
 }
 
 
-//int main()
-int stl_data_structures()
+int main()
+//int stl_data_structures()
 {
+    stl_set();
+    stl_multiset();
+
     stl_vector();
     stl_list();
     stl_stack();
@@ -272,7 +333,6 @@ int stl_data_structures()
     stl_deque();
     stl_map();
     stl_unordered_map();
-    stl_set();
     stl_unordered_set();
 
     return 0;

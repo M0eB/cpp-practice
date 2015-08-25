@@ -81,6 +81,9 @@
     <ClCompile Include="leet_004__excel-sheet-column-number.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="leet_006__number-of-digit-one.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h">
