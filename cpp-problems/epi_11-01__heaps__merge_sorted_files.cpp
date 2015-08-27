@@ -29,8 +29,6 @@ using namespace std;
 
 
 
-//
-//
 //class CompareStock
 //{
 //public:
@@ -42,7 +40,6 @@ using namespace std;
 //            return false;
 //    }
 //};
-//
 //
 //class MergeFiles
 //{
@@ -108,12 +105,8 @@ using namespace std;
 //    return "";
 //}
 //
-//
-//
-//
 //string sort_files()
 //{
-//
 //    priority_queue<string, vector<string>, CompareStock> pq;
 //
 //    vector<string> files;
@@ -123,20 +116,66 @@ using namespace std;
 //    {
 //        pq.push( getFileLine( *it ) );
 //    }
-//
-//
 //}
 //
-//
-//
-//
-//
+
+
+struct Compare
+{
+    bool operator()( const pair<int, int>& lhs, const pair<int, int>& rhs )
+    {
+        return lhs.first > rhs.first;
+    }
+};
+
+
+vector<int> merge_sorted_arrays( vector<vector<int>> sorted_arrays )
+{
+    priority_queue<pair<int, int>, vector<pair<int, int>>, Compare> min_heap;
+
+    vector<int> heads( sorted_arrays.size(), 0 );
+
+    //Add initial elements
+    for ( int i = 0; i < sorted_arrays.size(); i++ )
+    {
+        min_heap.emplace( sorted_arrays[i][0], i );
+        heads[i] = 1;  //first element added already
+    }
+
+    vector<int> result;
+    while ( !min_heap.empty() )
+    {
+        int smallest_entry = min_heap.top().first;
+        auto& smallest_array = sorted_arrays[min_heap.top().second];
+        auto& smallest_array_head = heads[min_heap.top().second];
+
+        result.emplace_back( smallest_entry );
+            
+        if( smallest_array_head < smallest_array.size() )
+        {
+            min_heap.emplace( smallest_array[smallest_array_head], min_heap.top().second );
+            smallest_array_head++;
+        }
+
+        min_heap.pop();
+    }
+
+    return result;
+}
+
+
 //int main()
-//{
-//
-//
-//
-//
-//    return 0;
-//}
-//
+int merg_sorted_files()
+{
+
+    vector<int> vec1 = { 1, 5, 12 };
+    vector<int> vec2 = { 3, 8, 9  };
+    vector<int> vec3 = { 2, 4, 14 };
+
+    vector<vector<int>> sorted_arrays = { vec1, vec2, vec3 };
+
+    vector<int> result = merge_sorted_arrays( sorted_arrays );
+
+    return 0;
+}
+

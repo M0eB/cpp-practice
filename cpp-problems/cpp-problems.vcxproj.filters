@@ -84,6 +84,12 @@
     <ClCompile Include="leet_006__number-of-digit-one.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="leet_007__contains-duplicate-3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="epi_10-04__trees__lowest-common-ancestor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h">
