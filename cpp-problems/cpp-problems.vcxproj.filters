@@ -90,6 +90,24 @@
     <ClCompile Include="epi_10-04__trees__lowest-common-ancestor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="epi_07-xx__strings__regex_matching.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gfg_004__dp-fibonacci.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gfg_005__longest-common-substring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chef_002__dp-longest-increasing-subsequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chef_003__dp-longest-common-subsequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chef_001__dp-min-steps-to-one.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list_prototype.h">

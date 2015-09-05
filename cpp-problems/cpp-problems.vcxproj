@@ -66,8 +66,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chef_002__dp-longest-increasing-subsequence.cpp" />
+    <ClCompile Include="chef_001__dp-min-steps-to-one.cpp" />
+    <ClCompile Include="chef_003__dp-longest-common-subsequence.cpp" />
     <ClCompile Include="epi_06-01__arrays__dutch-flag-partition.cpp" />
     <ClCompile Include="epi_07-01__strings__interconvert-strings-and-integers.cpp" />
+    <ClCompile Include="epi_07-xx__strings__regex_matching.cpp" />
     <ClCompile Include="epi_08-01__lists__merge-two-sorted-lists.cpp" />
     <ClCompile Include="epi_08-05__lists__checking-for-cyclicity.cpp" />
     <ClCompile Include="epi_09-01__stacks-queues__stack-with-max-operation.cpp" />
@@ -76,6 +80,8 @@
     <ClCompile Include="epi_10-04__trees__lowest-common-ancestor.cpp" />
     <ClCompile Include="epi_11-01__heaps__merge_sorted_files.cpp" />
     <ClCompile Include="epi_14-10__sorting__counting-sort.cpp" />
+    <ClCompile Include="gfg_004__dp-fibonacci.cpp" />
+    <ClCompile Include="gfg_005__longest-common-substring.cpp" />
     <ClCompile Include="int_ip__01-03__anagrams.cpp" />
     <ClCompile Include="int_ip__01-05__round_float.cpp" />
     <ClCompile Include="int_ip__01_02__bst-node-insert.cpp" />
